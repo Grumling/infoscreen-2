@@ -110,7 +110,14 @@ body {
 
 /* Our galleryJs */
 .galleryJs {
-  background: #3db6c7;
+  /* background: #3db6c7; */ /* background here, not needed. */
   border-radius: 0 0 15px 15px;
   grid-area: galleryJs;
+  overflow: hidden;
+}
+
+.galleryJs img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }

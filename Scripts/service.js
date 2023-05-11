@@ -1,4 +1,5 @@
 
+// Clock
 function currentTime() {
     let date = new Date(); 
     let hh = date.getHours();
@@ -22,4 +23,5 @@ function currentTime() {
   
   }
 
+  //exporting section
   export default currentTime;
