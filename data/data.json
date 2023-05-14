@@ -1,0 +1,24 @@
+{
+    "meetingsList": [
+        {
+            "title": "Hello World",
+            "room": "Room - 666" ,
+            "time": "12:00 - 15:00"
+        },
+        {
+            "title": "Hello World",
+            "room": "Room - 666" ,
+            "time": "12:00 - 15:00"
+        },
+        {
+            "title": "Hello World",
+            "room": "Room - 666" ,
+            "time": "12:00 - 15:00"
+        },
+        {
+            "title": "Hello World",
+            "room": "Room - 666" ,
+            "time": "12:00 - 15:00"
+        }
+    ]
+}
