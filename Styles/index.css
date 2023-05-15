@@ -50,11 +50,17 @@ body {
 }
 
 /* Our News API */
-.newsApi {
+.newsRss {
   background: #3db6c7;
   border-radius: 15px 15px 0 0;
   grid-area: newsApi;
   padding: 15px 20px;
+}
+
+.newsRss div {
+  background: red;
+  height: 100%;
+  width: 100%;
 }
 
 /* Our Weather API */
