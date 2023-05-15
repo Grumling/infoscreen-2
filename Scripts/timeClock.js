@@ -1,5 +1,6 @@
+const timeClock = {};
 // Clock
-function currentTime() {
+timeClock.currentTime = () => {
   let date = new Date();
   let hh = date.getHours();
   let mm = date.getMinutes();
@@ -18,9 +19,8 @@ function currentTime() {
 
   document.getElementById("timeJsClock").innerText = time;
   let t = setTimeout(function () {
-    currentTime();
+    //currentTime(); // FEJL HER SPØRG OM HJÆLP
   }, 1000);
-}
+};
 
-//exporting section
-export default currentTime;
+export default timeClock;
