@@ -64,6 +64,8 @@ body {
   width: 100%;
 }
 
+.news-list {}
+
 /* Our Weather API */
 .weatherApi {
   background: #2788a3;

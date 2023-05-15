@@ -14,7 +14,7 @@ meetings.init = () => {
         output += "</div>";
       }
 
-      document.querySelector(".meetingContainer").innerHTML = output; // skriver det ud i innerHtml
+      document.querySelector(".meetingContainer").innerHTML = output;// skriver det ud i innerHtml
     });
 };
 

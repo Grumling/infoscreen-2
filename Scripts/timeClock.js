@@ -1,5 +1,5 @@
 const timeClock = {};
-// Clock
+
 timeClock.currentTime = () => {
   let date = new Date();
   let hh = date.getHours();
