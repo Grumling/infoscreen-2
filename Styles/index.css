@@ -57,8 +57,9 @@ body {
   padding: 15px 20px;
 }
 
-.newsRss div {
+.rssContainer {
   background: red;
+  border-radius: 15px;
   height: 100%;
   width: 100%;
 }
@@ -67,7 +68,7 @@ body {
 .weatherApi {
   background: #2788a3;
   border-radius: 0 0 15px 15px;
-  grid-area: weatherApi;    
+  grid-area: weatherApi;
 }
 
 .weatherApi img {
@@ -99,17 +100,17 @@ body {
   margin-bottom: 20px;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
-  letter-spacing: 2px;;
+  letter-spacing: 2px;
 }
 
 .event-item {
-  background:  #3db6c7;
+  background: #3db6c7;
   border-radius: 5px 5px 5px 5px;
   padding: 15px 25px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: regular;
   font-size: 16px;
-  white-space: nowrap;  
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   /* Grid */
@@ -121,7 +122,7 @@ body {
   background: #3db6c7;
   border-radius: 15px 15px 15px 15px;
   margin-bottom: 10px;
-  }
+}
 
 /* Our aside container holding timeJs & galleryJs */
 .asideGridContainer {
@@ -154,7 +155,7 @@ body {
   letter-spacing: 5px;
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 }
 
 /* Our galleryJs */

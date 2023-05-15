@@ -1,29 +1,29 @@
 {
-    "meetingsList": [
-        {
-            "title": "Meeting 1",
-            "room": "Room - 56B" ,
-            "time": "12:00 - 14:00"
-        },
-        {
-            "title": "Meeting 2",
-            "room": "Room - 24A" ,
-            "time": "13:30 - 14:00"
-        },
-        {
-            "title": "Meeting 3",
-            "room": "Room - 35C" ,
-            "time": "09:00 - 10:30"
-        },
-        {
-            "title": "Meeting 4",
-            "room": "Room - 10" ,
-            "time": "15:00 - 16:00"
-        },
-        {
-            "title": "Meeting 5",
-            "room": "Room - 16" ,
-            "time": "14:30 - 16:30"
-        }
-    ]
+  "meetingsList": [
+    {
+      "title": "Meeting 1",
+      "room": "Room - 56B",
+      "time": "12:00 - 14:00"
+    },
+    {
+      "title": "Meeting 2",
+      "room": "Room - 24A",
+      "time": "13:30 - 14:00"
+    },
+    {
+      "title": "Meeting 3",
+      "room": "Room - 35C",
+      "time": "09:00 - 10:30"
+    },
+    {
+      "title": "Meeting 4",
+      "room": "Room - 10",
+      "time": "15:00 - 16:00"
+    },
+    {
+      "title": "Meeting 5",
+      "room": "Room - 16",
+      "time": "14:30 - 16:30"
+    }
+  ]
 }
