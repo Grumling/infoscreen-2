@@ -17,6 +17,14 @@ body {
   color: #ffffff;
 }
 
+:root {
+  --blueDark: #2788a3;
+  --blueLight: #3db6c7;
+  --DarkBack: #333333;
+  --WhiteFont: #ffffff;
+  --FontFamily: "Roboto", sans-serif;
+}
+
 /* Our wrapper center aligning the site and height*/
 .wrapper {
   height: 100vh;
@@ -28,14 +36,12 @@ body {
 .content {
   width: 100vw;
   aspect-ratio: 16 / 9;
-  background: #333333;
+  background: var(--DarkBack);
   margin: 50px; /* margin around all the content */
   display: flex;
 }
 
-/* ----- FLEX BOXES ----- */
-
-/* Out container for all the basic grid setup  */
+/* Main Grid Container  */
 .gridContainer {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -52,7 +58,7 @@ body {
 /* Our News API */
 
 .newsRss {
-  background: #3db6c7;
+  background: var(--blueLight);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -80,29 +86,30 @@ body {
 .feedCardContent {
   width: 300px;
   height: 250px;
-  background: #2788a3;
+  background: var(--blueDark);
   border-radius: 0 0 10px 10px;
   padding: 10px;
+  border: solid 1px var(--WhiteFont);
 }
 
 .feedCardContent h1 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--FontFamily);
   font-size: 1.2rem;
-  color: white;
+  color: var(--WhiteFont);
   padding: 0.5rem;
 }
 
 .feedCardContent p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--FontFamily);
   font-size: 16px;
   line-height: 20px;
-  color: white;
+  color: var();
   padding: 5px;
 }
 
 /* Our Weather API */
 .weatherApi {
-  background: #2788a3;
+  background: var(--blueDark);
   border-radius: 0 0 15px 15px;
   grid-area: weatherApi;
 }
@@ -116,7 +123,7 @@ body {
 }
 
 .weatherApi hr {
-  border: #3db6c7 solid 3px;
+  border: var(--blueLight) solid 3px;
   border-radius: 50px;
   width: 50%;
   margin: auto;
@@ -124,20 +131,28 @@ body {
 }
 
 .currentTemperatur {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2rem;
+  color: var(--WhiteFont);
+  font-family: var(--FontFamily);
+  font-size: 3rem;
+  /* margin: 0 0 80px 0; */
+}
+
+.weatherContainer {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 60px;
 }
 
 .windSpeed {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2rem;
+  color: var(--WhiteFont);
+  font-family: var(--FontFamily);
+  font-size: 3rem;
+  /* margin: 0 0 80px 0 */
 }
 
 /* Our Events Container */
 .eventsContainer {
-  background: #2788a3;
+  background: var(--blueDark);
   border-radius: 0 0 15px 15px;
   grid-area: eventsContainer;
   padding: 15px 20px;
@@ -146,16 +161,16 @@ body {
 
 .eventsContainer h2 {
   margin-bottom: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--FontFamily);
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
 .event-item {
-  background: #3db6c7;
+  background: var(--blueLight);
   border-radius: 5px 5px 5px 5px;
   padding: 15px 25px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--FontFamily);
   font-weight: regular;
   font-size: 16px;
   white-space: nowrap;
@@ -167,7 +182,7 @@ body {
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  background: #3db6c7;
+  background: var(--blueLight);
   border-radius: 15px 15px 15px 15px;
   margin-bottom: 10px;
 }
@@ -188,7 +203,7 @@ body {
 
 /* Our timeJs */
 .timeJs {
-  background: #3db6c7;
+  background: var(--blueLight);
   border-radius: 15px 15px 0 0;
   grid-area: timeJs;
   display: grid;
@@ -196,8 +211,8 @@ body {
 
 /* Clock ID for styling */
 #timeJsClock {
-  color: #ffffff;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: var(--WhiteFont);
+  font-family: var(--FontFamily);
   font-size: 50px;
   font-weight: bold;
   letter-spacing: 5px;
@@ -208,7 +223,6 @@ body {
 
 /* Our galleryJs */
 .galleryJs {
-  /* background: #3db6c7; */ /* background here, not needed. */
   border-radius: 0 0 15px 15px;
   grid-area: galleryJs;
   overflow: hidden;

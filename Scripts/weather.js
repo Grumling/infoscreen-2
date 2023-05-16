@@ -15,8 +15,12 @@ weatherApi.init = () => {
 
       const temp = document.querySelector(".weatherApi");
       temp.innerHTML =
+        `<div><img src="./img/Weather Sun Icon.svg"></div>` +
+        `<hr>` +
+        `<div class="weatherContainer">` +
         `<div class="currentTemperatur">${currentWeather.temperature} °C</div>` +
-        `<div class="windSpeed">${currentWeather.windspeed} m/s</div>`;
+        `<div class="windSpeed">${currentWeather.windspeed} m/s</div>` +
+        `</div>`;
     })
 
     .catch((error) => console.log(error));
