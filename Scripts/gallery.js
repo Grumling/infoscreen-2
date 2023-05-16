@@ -7,6 +7,7 @@ gallery.init = () => {
     animationDuration: 1200,
     gap: 5,
   }).mount();
+
 };
 
 export default gallery;

@@ -1,3 +1,4 @@
+/* BASICS */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -15,6 +16,7 @@ body {
   margin: 0;
   background: #333333;
   color: #ffffff;
+  overflow: hidden;
 }
 
 :root {
@@ -71,8 +73,6 @@ body {
 }
 
 .feedCardContainer {
-  width: 300px;
-  height: 400px;
   grid-area: newsApi;
 }
 
@@ -85,26 +85,28 @@ body {
 
 .feedCardContent {
   width: 300px;
-  height: 250px;
+  height: 350px;
   background: var(--blueDark);
   border-radius: 0 0 10px 10px;
-  padding: 10px;
+  padding: 30px;
   border: solid 1px var(--WhiteFont);
 }
 
 .feedCardContent h1 {
   font-family: var(--FontFamily);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  line-height: 28px;
+  letter-spacing: 1px;
   color: var(--WhiteFont);
-  padding: 0.5rem;
+  padding: 8px 8px 0 8px;
 }
 
 .feedCardContent p {
   font-family: var(--FontFamily);
-  font-size: 16px;
+  font-size: 1.2rem;
   line-height: 20px;
-  color: var();
-  padding: 5px;
+  color: var(--WhiteFont);
+  padding: 20px 5px 5px 5px;
 }
 
 /* Our Weather API */
